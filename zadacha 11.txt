@@ -1,0 +1,17 @@
+n=int(input("napishi chislo: "))
+dict={}
+for i in range(n):
+    key=input()
+    value=input()
+    dict[key]=value
+m=int(input(" napishi chislo: "))
+lista=[]
+for i in range(m):
+    lista.append(input("napishi stoynost: "))
+print(dict, lista)
+for i in range(len(lista)):
+    if lista[i] in dict.keys():
+        a=lista[i]
+        lista[i]=dict[lista[i]]
+        dict.pop(a)
+        print(dict,lista)

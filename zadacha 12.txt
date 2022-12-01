@@ -1,0 +1,24 @@
+def avg (lst, multiplier='1'):
+    
+    if not multiplier.isnumeric():
+        print('Mnozitel must be a number')
+        return
+    multiplier=int(multiplier)
+    counter=0
+    sum=0
+    for element in lst:
+        if type(element)==int or type(element)==float or element.isnumeric():
+            element=int(element)
+            sum += element * multiplier
+            counter += 1
+    if counter==0:
+        print('Greshka')
+        return
+    return sum/counter
+m=int(input("number of reps "))
+lst=[]
+for i in range(m):
+    lst.append(input(" : "))
+print(lst)
+l=avg(lst)
+print(l)

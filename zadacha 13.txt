@@ -1,0 +1,37 @@
+def input_nums(n):
+     if not n.isnumeric():
+        return list()
+     n=int(n)
+     nums_list=list()
+     for i in range(n):
+         x=input(" ")
+         if x.isnumeric():
+             nums_list.append(int(x))
+             return nums_list
+def sum_list(list):
+    sum=0
+    for element in lst:
+        if type(element)==int or type(element)==float or element.isnumeric():
+            num=float(element)
+            sum+=num
+    return sum
+def max_of_two(x,y):
+    if type(x)==int or type(x)==float:
+        if type(y)==int or type(y)==float:
+            return x if x>= y else y
+        return x
+    if type(y)==int or type(y)==float: return y
+    return
+n=input()
+x=input_nums(n)
+print(x)
+br=int(input("number of reps"))
+lst=[]
+for i in range(br):
+    lst.append(input("input"))
+y=sum_list(lst)
+print(y)
+z=int(input())
+h=int(input())
+m=max_of_two(z,h)
+print(g)
